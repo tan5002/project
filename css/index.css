@@ -1,30 +1,80 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-img{
+
+img {
     width: 100%;
     height: 100%;
 }
-li{
-  list-style-type: none;
-}
 
-.main-container{
-    height: 100vh;
+li {
+    list-style-type: none;
+}
+.hidden{
+    display: none;
+}
+.box{
+    display: none;
+}
+.img-food{
+    height: 100px;
+}
+.img-bookin{
+    height: 130px;
+}
+.image-cart{
+    width: 50px;
+    height: 50px;
+}
+.stt{
+    color: #fff;
+    top: 7px;
+    left: 7px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
     display: flex;
-    .container-left{
+    justify-content: center;
+    align-items: center;
+}
+.increase, .decrease{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #dc3445;
+    color: #fff;
+}
+.drop-hidden{
+    display: none;
+}
+.drop-down{
+    width: 150px;
+    right: 30px;
+}
+.quantity{
+    padding: 5px 15px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+.main-container {
+    height: 100vh;
+    .container-left {
         background-color: pink;
-        header{
-             height: 50px;
-             border-bottom: 1px solid black;
-             display: flex;
-             align-items: center;
-             justify-content: center;
-             position: relative;
-             i{
-                background-color:black;
+        header {
+            height: 50px;
+            border-bottom: 1px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+
+            .fa-arrow-left,.fa-bars {
+                background-color: black;
                 color: #fff;
                 border-radius: 50%;
                 padding: 7px;
@@ -32,65 +82,82 @@ li{
                 right: -15px;
                 top: 50%;
                 transform: translate(50%, -50%);
-             }
+            }
         }
-        .ull { 
+
+        .ull {
             border-bottom: 1px solid black;
         }
-        li{
+
+        li {
             display: flex;
             gap: 20px;
             padding: 10px;
             align-items: center;
+
             &:hover {
                 background-color: black;
                 color: white;
             }
         }
-        ul{
+
+        ul {
             padding: 0;
         }
     }
-    .container-right{
+
+    .container-right {
         flex: 1;
-        .header-top{
+
+        .header-top {
             height: 50px;
             display: flex;
             border-bottom: 1px solid black;
             align-items: center;
             justify-content: space-between;
-            .icon{
-                i{
+
+            .icon {
+                i {
                     font-size: 1rem;
                     margin-left: 30px;
                 }
             }
-            
-            .logo{
+
+            .logo {
                 width: 30px;
                 height: 30px;
-                img{
+
+                img {
                     border-radius: 50%;
                 }
             }
         }
-        .container{
-            .row{
-                .col{
-                    .box{
-                        .number{
-                            top: 10px;
-                            left: 10px;
-                            background-color: #C6477A;
-                            padding: 3px 9px;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                        }
-                    }
-                }
-            }
+        main {
+            height: calc(100vh - 50px);
+            overflow-y: auto;
         }
     }
 
+}
+
+@media screen and (min-width: 769px) {
+    .main-container {
+        height: 100vh;
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-container {
+        .container-left {
+            header {
+                .fa-arrow-left,.fa-bars {
+                    right: 10px
+                }
+            }
+            .menu-item{
+                display: none;
+            }
+        }
+    }
 }

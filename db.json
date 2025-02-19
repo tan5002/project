@@ -1,0 +1,90 @@
+{
+  "tables": [
+    {
+      "id": "1",
+      "nameCustomer": "tân",
+      "quantity": "2",
+      "status": true
+    },
+    {
+      "id": "2",
+      "nameCustomer": "",
+      "quantity": null,
+      "status": true
+    },
+    {
+      "id": "3",
+      "nameCustomer": "",
+      "quantity": "",
+      "status": true
+    },
+    {
+      "id": "4",
+      "nameCustomer": "",
+      "quantity": null,
+      "status": true
+    },
+    {
+      "id": "5",
+      "nameCustomer": "",
+      "quantity": null,
+      "status": false
+    },
+    {
+      "id": "6",
+      "nameCustomer": "",
+      "quantity": null,
+      "status": true
+    }
+  ],
+  "foods": [
+    {
+      "nameFood": "Sushi",
+      "image": "https://img.freepik.com/premium-photo/hong-kong-kale-stir-fried-oyster-sauce-with-garlic_1339-11711.jpg?w=740",
+      "price": 15,
+      "id": "44f1"
+    },
+    {
+      "nameFood": "Pizza Margherita",
+      "image": "https://img.freepik.com/free-photo/dim-sum_74190-4861.jpg?t=st=1739498735~exp=1739502335~hmac=121c3ac47710559e96c978a65cfcf5b9821404f41e79ccf0238d5cf78d3b6903&w=740",
+      "price": 20,
+      "id": "bd13"
+    },
+    {
+      "nameFood": "Hamburger",
+      "image": "https://img.freepik.com/free-photo/elegant-plate-with-fresh-appetizing-salad_7502-7275.jpg?t=st=1739498768~exp=1739502368~hmac=eebdddc45532cd044c0362b6e2dd7a5314263aaa92e0886f4aa46c8f0c9ac930&w=740",
+      "price": 12,
+      "id": "5563"
+    },
+    {
+      "nameFood": "Paella",
+      "image": "https://img.freepik.com/premium-photo/red-lobster-with-vegetables-white-plate-isolated_72594-779.jpg?w=740",
+      "price": 25,
+      "id": "f026"
+    },
+    {
+      "nameFood": "Croissant",
+      "image": "https://img.freepik.com/premium-photo/tasty-italian-pasta-with-seafood-isolated-white-background_1040174-1929.jpg?w=740",
+      "price": 50,
+      "id": "52a8"
+    },
+    {
+      "nameFood": "Pad Thai",
+      "image": "https://img.freepik.com/premium-photo/thai-streamed-fish-curry-banana-leaves-noni-morinda-citrifolia-leaves-white-surface_51524-13051.jpg?w=740",
+      "price": 13,
+      "id": "e567"
+    },
+    {
+      "nameFood": "Tacos",
+      "image": "https://img.freepik.com/free-photo/delicious-food-white-plate_144627-34692.jpg?t=st=1739498861~exp=1739502461~hmac=5056d7e47f367de539d000ca55bac61911e0a5bb00cc621371213eb92f4e2594&w=740",
+      "price": 9,
+      "id": "4789"
+    },
+    {
+      "nameFood": "Kimchi Jjigae",
+      "image": "https://img.freepik.com/free-photo/fried-rice-with-shrimp-prawn-top-white-plate_1203-7540.jpg?t=st=1739498885~exp=1739502485~hmac=102b85ca45e65c0c71a4c3286e8ed3e8eb7807cce84d9befb1b3789bb15b7ffc&w=740",
+      "price": 14,
+      "id": "29d4"
+    }
+  ]
+}

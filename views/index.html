@@ -1,90 +1,250 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Title</title>
-        <!-- Required meta tags -->
-        <meta charset="utf-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
-        <link
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-        rel="stylesheet"
-      />
-      <link rel="stylesheet" href="../css/index.css">
-        <!-- Bootstrap CSS v5.2.1 -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-            crossorigin="anonymous"
-        />
-    </head>
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/index.css" />
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
 
-    <body>
-        <div class="main-container">
-            <div class="container-left px-3">
-                <header>
-                    <h3>PINK STORE</h3>
-                    <i class="fa-solid fa-arrow-left"></i>
-                </header>
-                
-                <li> <i class="fa-solid fa-gauge"></i> <span>DASHBOARD</span>  </li>
-                <div class="ull">
-                    UI ELEMENT
-                </div>
-                <div>
-                    <ul>
-                        <li> <i class="fa-solid fa-utensils"></i> <span>Reservation</span> </li>
-                        <li> <i class="fa-solid fa-utensils"></i> <span>Order food</span></li>
-                        <li> <i class="fa-solid fa-utensils"></i> <span>PAYBILL</span></li>
-                        <li> <i class="fa-solid fa-utensils"></i> <span>Information</span></li>
-                    </ul>
-                </div>   
-            </div>
-            <div class="container-right">
-                <div class="header-top px-3">
-                    <div class="icon">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <i class="fa-solid fa-envelope"></i>
-                        <i class="fa-solid fa-bell"></i>
-                    </div>
-                    <div class="logo">
-                        <img src="../img/image.png" alt="">
-                    </div>
-                    
-                </div>
-                <div class="container">
-                    <div class="row row-cols-xl-4 row-cols-md-2 row-cols-1 order">
-                       
-                    </div>
-                    <div class="row row-cols-xl-4 row-cols-md-2 row-cols-1 booking">
-                       
-                    </div>
-                </div>
-            </div>
+  <body>
+    <div class="main-container">
+      <div class="container-left px-3">
+        <header>
+          <i class="fa-solid fa-house item"></i>
+          <h3 class="item hidden">PINK STORE</h3>
+          <div class="icon">
+            <i class="fa-solid fa-arrow-left item hidden"></i>
+            <i class="fa-solid fa-bars item"></i>
+          </div>
+        </header>
+        <div class="menu-item">
+          <li>
+            <i class="fa-solid fa-gauge"></i>
+            <span class="item hidden">DASHBOARD</span>
+          </li>
+          <div class="ull hidden">UI ELEMENT</div>
+          <div>
+            <ul>
+              <li>
+                <i class="fa-regular fa-calendar-plus"></i>
+                <span class="item hidden">Reservation</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-utensils"></i>
+                <span class="item hidden">Order food</span>
+              </li>
+              <li>
+                <i class="fa-regular fa-money-bill-1"></i>
+                <span class="item hidden">PAYBILL</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-user"></i>
+                <span class="item hidden">Information</span>
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
+      <div class="container-right">
+        <div class="header-top px-3">
+          <div class="icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-envelope"></i>
+            <i class="fa-solid fa-bell"></i>
+          </div>
+          <div class="logo position-relative">
+            <img src="../img/image.png" alt="" />
+            <div class="drop-down hidden position-absolute">
+              <ul class="list-group">
+                <li class="list-group-item">An item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A fourth item</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <main>
+          <div class="box">DASHBOARD</div>
+          <div class="box">
+            <div class="container mt-3">
+              <div class="row row-cols-xl-4 row-cols-md-2 row-cols-1 tables g-3">
+              
+                </div>
+            </div>
+          </div>
+          <div class="box">
+            <div
+              class="container  py-3 "
+            >
+              <div class="row g-2">
+                <div class="col-md-3 col-12 d-flex gap-2">
+                  <select class="form-select flex-1" aria-label="Default select example">
+                    <option selected>Open </option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                  <button class="btn text-white" style="background-color: #dc3445">
+                    Order
+                  </button>
+                </div>
+                <div class="col-md-6 col-12 d-flex gap-2">
+                  <input type="text" class="form-control flex-1" placeholder="Search" aria-label="Username">
+                  <button
+                    class="btn  rounded text-white"
+                    style="background-color: #dc3445"
+                  >
+                    Search
+                  </button>
+                </div>
+                <div class="col-md-3 text-end">
+                  <button class="btn  rounded text-white" data-bs-toggle="modal" data-bs-target="#add_food"   style="background-color: #dc3445">Add Food</button>
+                </div>
+            </div>
+
+            </div>
+            <div class="container">
+              <div class="row row-cols-xl-4 row-cols-md-2 row-cols-1 g-3 foods">
+                
+              </div>
+            </div>
+          </div>
+          <div class="box">PAYBILL</div>
+          <div class="box">info</div>
+        </main>
+      </div>
+    </div>
+    <div class="modal fade" id="bookin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">TABLE BOOKING</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form id="form-booking">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Customer Name</label>
+                <input type="text" class="form-control" id="customerName"  aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Quantity</label>
+                <input type="number" class="form-control" id="quantity">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary">Gửi</button>
+              </div>
+            </form>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="add_food" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">ADD FOOD</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form id="form-add_food">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Name</label>
+                <input type="text" class="form-control" id="customerName"  aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Price</label>
+                <input type="number" class="form-control" id="quantity">
+              </div>
+              <div class="input-group mb-3">
+                <input type="file" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <span class="input-group-text" id="basic-addon2">file image</span>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary">Add food</button>
+              </div>
+            </form>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="cart" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Lists of ordered dishes</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <table class="table text-center">
+              <thead>
+                <tr >
+                  <th scope="col">#</th>
+                  <th scope="col">Image</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Quantity</th>
+                  <th scope="col">Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td><img src="../img/image.png" alt="" class="image-cart"></td>
+                  <td>Burger</td>
+                  <td>4</td>
+                  <td>$50</td>
+                </tr>
+                <tr class="text-end">
+                  <td colspan="3">total: </td>
+                  <td colspan="2">$100</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="text-end">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-primary">Pay Bills</button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
 
 
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
 
-
-
-
-
-
-
-        <script
-            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"
-        ></script>
-
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-            crossorigin="anonymous"
-        ></script>
-        <script src="../js/index.js"></script>
-    </body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/handleMenu.js"></script>
+    <script src="../js/api.js"></script>
+    <script src="../js/getTables.js"></script>
+    <script src="../js/getFoods.js"></script>
+  </body>
 </html>
